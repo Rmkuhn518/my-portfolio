@@ -188,31 +188,30 @@
       </div>
     </section>
 
-    <!-- Recommendation Form -->
-    <section id="contact">
-      <div class="flex_center">
-        <fieldset>
-          <legend class="introduction">Leave a Recommendation</legend>          
-          <input type="text" placeholder="Name (Optional)"> <br/>
-          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
-          </div>
-        </fieldset>
-      </div>
-    </section>
-
-    <div class="iconbutton">
-      <a href="#home">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>      </a>
+    <!-- Contact Form -->
+<div class="contact-form">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
     </div>
-
-    <div class="popup" id="popup" class="flex_center">
-      <img src="html_finalprojimages/checkmark--outline.svg"/>
-      <h3>Thanks for leaving a recommendation!</h3>
-      <button onclick="showPopup(false)">Ok</button>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
     </div>
-  </body>
-</html>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" required></textarea>
+    </div>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <div id="thankYouPopup" class="popup">
+    <div class="popup-content">
+      <h3>Thank You!</h3>
+      <p>We've received your message and will get back to you soon.</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+</div>
