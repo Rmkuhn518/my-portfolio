@@ -84,14 +84,3 @@ function closePopup() {
     const thankYouPopup = document.getElementById('thankYouPopup');
     thankYouPopup.style.display = 'none';
 }
-
-function closePopup() {
-    const thankYouPopup = document.getElementById('thankYouPopup');
-    thankYouPopup.style.display = 'none';
-}
-
-
-function closePopup() {
-    const thankYouPopup = document.getElementById('thankYouPopup');
-    thankYouPopup.style.display = 'none';
-}
