@@ -349,6 +349,27 @@ button:hover {
 
 /* Buttons */
 
+.contact-button {
+  background-color: white;
+  border: 1px solid #7600bc;
+  color: #7600bc;
+  border-radius: 6px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+  /* Centering styles */
+  display: block;
+  margin: 50px auto; /* Changed from margin: 50px to auto for horizontal centering */
+  text-align: center;
+}
+
+.contact-button:hover {
+  background-color: #713d98;
+  border: 1px solid #713d98;
+  color: #fff;
+  cursor: pointer;
+}
+
 button {
   background-color: white;
   border: 1px solid; 
