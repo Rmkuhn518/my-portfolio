@@ -251,8 +251,6 @@ h2 {
   transform: translate(-50%,-50%);
   text-align: center;
   position: fixed;
-  /* padding: 30px; */
-  visibility: hidden;
 }
 
 .thankYouPopup img {
