@@ -1,30 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contactForm');
+    const thankYouPopup = document.getElementById('thankYouPopup');
     
     form.addEventListener('submit', async function(e) {
-        e.preventDefault();
+        e.preventDefault(); // Temporarily prevent form submission
         
+        // Get form values
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const message = document.getElementById('message').value;
         
-        if (!name.trim() || !email.trim() || !message.trim()) {
-            displayError('Please fill in all fields');
-            return;
-        }
-
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            displayError('Please enter a valid email address');
+        // Validate form
+        if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+            alert('Please fill in all fields');
             return;
         }
         
         try {
-            const submitButton = form.querySelector('button[type="submit"]');
-            submitButton.textContent = 'Sending...';
-            submitButton.disabled = true;
-            
-            const response = await fetch('https://formsubmit.co/ajax/rmkuhn518@gmail.com', {
+            // Submit the form data
+            await fetch('https://formsubmit.co/rmkuhn518@gmail.com', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -37,51 +31,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 })
             });
             
-            if (response.ok) {
-                showPopup();
-                form.reset();
-            } else {
-                throw new Error('Form submission failed');
-            }
-        } catch (error) {
-            console.error('Error submitting form:', error);
-            displayError('There was an error sending your message. Please try again.');
-        } finally {
-            const submitButton = form.querySelector('button[type="submit"]');
-            submitButton.textContent = 'Send Message';
-            submitButton.disabled = false;
-        }
-    });
-});
-
-function displayError(message) {
-    const errorDiv = document.getElementById('errorMessage');
-    errorDiv.textContent = message;
-    errorDiv.style.display = 'block';
-    
-    setTimeout(() => {
-        errorDiv.style.display = 'none';
-    }, 5000);
-}
-
-function showPopup() {
-    const popup = document.getElementById('thankYouPopup');
-    popup.style.display = 'block';
-    
-    popup.addEventListener('click', function(e) {
-        if (e.target === popup) {
-            closePopup();
-        }
-    });
-    
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-            closePopup();
-        }
-    });
-}
-            // Show the thank you popup after successful submission
-            showPopup();
+            // Hide the contact form and show the thank you popup
+            form.style.display = 'none';   // Hide the form
+            showPopup();                   // Show the thank you popup
         } catch (error) {
             console.error('Error:', error);
             alert('There was an issue submitting your form. Please try again.');
@@ -96,6 +48,7 @@ function showPopup() {
     // Function to close the popup
     function closePopup() {
         thankYouPopup.style.display = 'none'; // Hide the popup
+        form.style.display = 'block';          // Show the form again
+        form.reset();                          // Optionally reset the form for future use
     }
 });
-
