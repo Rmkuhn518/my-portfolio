@@ -178,19 +178,6 @@ h2 {
   margin-left: 5cm;
 }
 
-.projects-container h2 a {
-  color: #713d98; /* Default purple */
-  text-decoration: none; /* Remove underline */
-}
-
-.projects-container h2 a:hover {
-  color: #e8bcf0; /* Lighter purple (thank you popup shade) */
-}
-
-.projects-container h2 a:visited {
-  color: black; /* Turn black after clicking */
-}
-
 .project-card {
   margin: 0 15px 15px 30px;
   padding-bottom: 5px;
@@ -199,7 +186,17 @@ h2 {
 .project-card h3 {
   font-size: 25px;
   margin-left: 30px;
+  color: #713d98;
 }
+
+.project-card h3 a:hover {
+  color: #e8bcf0; /* Lighter purple (thank you popup shade) */
+}
+
+.project-caard h3 a:visited {
+  color: black; /* Turn black after clicking */
+}
+
 
 .project-card li {
   font-size: 20px;
