@@ -111,7 +111,7 @@ h3 {
 }
 
 #about-me p {
-  font-size: 16px;
+  font-size: 24px;
   color: rgb(128, 128, 128);
   margin-top: -1cm;
   margin-right: 200px;
@@ -161,7 +161,7 @@ h3 {
 
 .skills p {
   align-items: center;
-  font-size: 16px;
+  font-size: 15px;
   color: gray;
   margin-block-start: 5px;
   margin-block-end: 5px;
