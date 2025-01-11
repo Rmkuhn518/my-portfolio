@@ -80,8 +80,22 @@ function showPopup() {
         }
     });
 }
+            // Show the thank you popup after successful submission
+            showPopup();
+        } catch (error) {
+            console.error('Error:', error);
+            alert('There was an issue submitting your form. Please try again.');
+        }
+    });
+    
+    // Function to show the popup
+    function showPopup() {
+        thankYouPopup.style.display = 'block'; // Show the popup
+    }
 
-function closePopup() {
-    const popup = document.getElementById('thankYouPopup');
-    popup.style.display = 'none';
-}
+    // Function to close the popup
+    function closePopup() {
+        thankYouPopup.style.display = 'none'; // Hide the popup
+    }
+});
+
