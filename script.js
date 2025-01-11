@@ -2,28 +2,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contactForm');
     
     form.addEventListener('submit', async function(e) {
-        e.preventDefault();
+        e.preventDefault();  // Stop the form from submitting normally
         
+        // Get form values
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const message = document.getElementById('message').value;
         
+        // Validate form
         if (!name.trim() || !email.trim() || !message.trim()) {
             displayError('Please fill in all fields');
             return;
         }
-
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            displayError('Please enter a valid email address');
-            return;
-        }
         
         try {
+            // Show loading state
             const submitButton = form.querySelector('button[type="submit"]');
             submitButton.textContent = 'Sending...';
             submitButton.disabled = true;
             
+            // Submit the form data
             const response = await fetch('https://formsubmit.co/ajax/rmkuhn518@gmail.com', {
                 method: 'POST',
                 headers: {
@@ -38,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             
             if (response.ok) {
+                // This line actually shows the popup
                 showPopup();
                 form.reset();
             } else {
@@ -47,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error submitting form:', error);
             displayError('There was an error sending your message. Please try again.');
         } finally {
+            // Reset button state
             const submitButton = form.querySelector('button[type="submit"]');
             submitButton.textContent = 'Send Message';
             submitButton.disabled = false;
@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Function to display error messages
 function displayError(message) {
     const errorDiv = document.getElementById('errorMessage');
     errorDiv.textContent = message;
@@ -64,6 +65,7 @@ function displayError(message) {
     }, 5000);
 }
 
+// Your existing popup functions
 function showPopup() {
     const popup = document.getElementById('thankYouPopup');
     popup.style.display = 'block';
