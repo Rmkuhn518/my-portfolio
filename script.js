@@ -43,8 +43,3 @@ function closePopup() {
     const popup = document.getElementById('Popup');
     popup.style.display = 'none';
 }
-
-function closePopup() {
-    const popup = document.getElementById('Popup');
-    popup.style.display = 'none';
-}
