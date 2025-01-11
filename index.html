@@ -3,13 +3,18 @@
   <head>
     <title>Rachel Kuhn - Portfolio</title>
     <link rel="stylesheet" href="./style.css"/>
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <!-- Navigation Bar -->
     <nav>
       <div id="home">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <div class="profile_name">
           Rachel Kuhn
           <div class="contact_info">
@@ -27,7 +32,7 @@
           <a class="topmenu" href="#skills">Skills</a>
           <a class="topmenu" href="#projects">Projects</a>
           <a class="topmenu" href="#contact">Contact Me</a>
-          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <!-- Nav for Skills, Projects and Contact -->
         </div>
       </div>    
     </nav>
@@ -37,11 +42,12 @@
       <div>
         <img src="https://img.freepik.com/premium-vector/software-developer-vector-illustration-communication-technology-cyber-security_1249867-5464.jpg?ga=GA1.1.205939800.1736562618&semt=ais_hybrid" class="profile_image"/>
       </div>
-
+    
       <div>
-          <h1>
-            Hey, I'm Rachel! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
-          </h1>
+        <h1>
+          Hey, I'm Rachel! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+        </h1>
+        <div class="bio-content">
           <p>
             I find joy in every aspect of the creative process, 
             whether I'm diving into personal projects that challenge my skills, 
@@ -59,6 +65,8 @@
             I bring that same explorer's mindset to my work—whether I'm wandering through a new city 
             or working with my team to make a clients ideas into reality, I'm always excited to discover something new.
           </p>
+        </div>
+        <button class="bio-toggle">Read More</button>
       </div>
     </section>
               
