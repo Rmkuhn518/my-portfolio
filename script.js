@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contactForm');
-    const popup = document.getElementById('Popup');
     
     form.addEventListener('submit', async function(e) {
-        e.preventDefault(); // Temporarily prevent form submission
+        e.preventDefault();  // Stop the form from submitting normally
         
         // Get form values
         const name = document.getElementById('name').value;
@@ -11,14 +10,19 @@ document.addEventListener('DOMContentLoaded', function() {
         const message = document.getElementById('message').value;
         
         // Validate form
-        if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
-            alert('Please fill in all fields');
+        if (!name.trim() || !email.trim() || !message.trim()) {
+            displayError('Please fill in all fields');
             return;
         }
         
         try {
+            // Show loading state
+            const submitButton = form.querySelector('button[type="submit"]');
+            submitButton.textContent = 'Sending...';
+            submitButton.disabled = true;
+            
             // Submit the form data
-            await fetch('https://formsubmit.co/rmkuhn518@gmail.com', {
+            const response = await fetch('https://formsubmit.co/ajax/rmkuhn518@gmail.com', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -31,19 +35,65 @@ document.addEventListener('DOMContentLoaded', function() {
                 })
             });
             
-            // Show popup only after successful form submission
-            showPopup();
+            if (response.ok) {
+                // This line actually shows the popup
+                showPopup();
+                form.reset();
+            } else {
+                throw new Error('Form submission failed');
+            }
         } catch (error) {
-            console.error('Error:', error);
-            alert('There was an issue submitting your form. Please try again.');
+            console.error('Error submitting form:', error);
+            displayError('There was an error sending your message. Please try again.');
+        } finally {
+            // Reset button state
+            const submitButton = form.querySelector('button[type="submit"]');
+            submitButton.textContent = 'Send Message';
+            submitButton.disabled = false;
+        }
+    });
+});
+
+// Function to display error messages
+function displayError(message) {
+    const errorDiv = document.getElementById('errorMessage');
+    errorDiv.textContent = message;
+    errorDiv.style.display = 'block';
+    
+    setTimeout(() => {
+        errorDiv.style.display = 'none';
+    }, 5000);
+}
+
+// Your existing popup functions
+function showPopup() {
+    const popup = document.getElementById('thankYouPopup');
+    popup.style.display = 'block';
+    
+    popup.addEventListener('click', function(e) {
+        if (e.target === popup) {
+            closePopup();
         }
     });
     
-    function showPopup() {
-        popup.style.display = 'block'; // Show popup
-    }
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closePopup();
+        }
+    });
+}
 
-    function closePopup() {
-        popup.style.display = 'none'; // Hide popup
-    }
-});
+function closePopup() {
+    const popup = document.getElementById('thankYouPopup');
+    popup.style.display = 'none';
+}
+    popup.style.display = 'none';
+}
+
+function showPopup(bool) {
+  if (bool) {
+    document.getElementById('popup').style.visibility = 'visible'
+  } else {
+    document.getElementById('popup').style.visibility = 'hidden'
+  }
+}
