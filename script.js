@@ -31,9 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 })
             });
             
-            // Hide the contact form and show the thank you popup
-            form.style.display = 'none';   // Hide the form
-            showPopup();                   // Show the thank you popup
+            // Show the thank you popup after successful submission
+            showPopup();
         } catch (error) {
             console.error('Error:', error);
             alert('There was an issue submitting your form. Please try again.');
@@ -48,7 +47,5 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to close the popup
     function closePopup() {
         thankYouPopup.style.display = 'none'; // Hide the popup
-        form.style.display = 'block';          // Show the form again
-        form.reset();                          // Optionally reset the form for future use
     }
 });
