@@ -348,6 +348,21 @@ button:hover {
   text-align: center;
 }
 
+/* Linked Copy */
+
+a {
+  color: #713d98; /* Default purple */
+  text-decoration: none; /* Remove underline for consistency */
+}
+
+a:hover {
+  color: #e8bcf0; /* Lighter purple (thank you popup shade) */
+}
+
+a:visited {
+  color: black; /* Turn black after clicking */
+}
+
 /* Buttons */
 
 .contact-button {
