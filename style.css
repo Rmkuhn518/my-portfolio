@@ -89,31 +89,130 @@ h2 {
 
 /* About Me */
 
-.about-me {
+/* About Me Section */
+.container {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#about-me {
+  text-align: center;
+  width: 100%;
 }
 
 #about-me h1 {
-  font-size: 65px;
-  margin-top: 90px;
+  font-size: 3rem;
+  margin-top: 2rem;
   color: #713d98;
 }
 
 #about-me p {
-  font-size: 25px;
+  font-size: 1.2rem;
   color: rgb(128, 128, 128);
-  margin-top: -1cm;
-  margin-right: 200px;
+  margin: 1rem auto;
+  max-width: 800px;
+  line-height: 1.6;
+  padding: 0 20px;
 }
 
 .profile_image {
-  width: 550px;
-  height: fit-content;
-  vertical-align: middle;
-  margin: 5px;
-  margin-left: 100px;
-  margin-top: 40px
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  margin: 2rem auto;
+}
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 768px) {
+  /* Navigation */
+  #home {
+    padding: 1rem;
+    height: auto;
+  }
+
+  .topdiv {
+    float: none;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .profile_name {
+    float: none;
+    padding: 0;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .topmenu {
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }
+
+  /* About Section */
+  #about-me h1 {
+    font-size: 2rem;
+  }
+
+  #about-me p {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  /* Skills Section */
+  .all_skills {
+    justify-content: center;
+  }
+
+  .skill {
+    width: calc(50% - 2rem);
+    margin: 1rem;
+  }
+
+  /* Projects Section */
+  .projects-container {
+    margin: 1rem;
+  }
+
+  .project-card {
+    margin: 1rem 0;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-card li {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  /* Contact Form */
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .contact-button {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto;
+  }
+}
+
+/* Small screens */
+@media screen and (max-width: 480px) {
+  .skill {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .profile_name {
+    font-size: 1.5rem;
+  }
 }
 
 /* Skills */
