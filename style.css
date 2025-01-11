@@ -189,7 +189,6 @@ h2 {
 
 .project-card h3 a {
   color: #713d98; /* Default purple */
-  text-decoration: none; /* Remove underline */
 }
 
 .project-card h3 a:hover {
