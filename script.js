@@ -37,9 +37,12 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (response.ok) {
                 // This line actually shows the popup
-                showPopup();
-                form.reset();
-            } else {
+            // Show loading state
+            const submitButton = form.querySelector('button[type="submit"]');
+            submitButton.textContent = 'Sent!';
+            submitButton.disabled = true;
+            } 
+            else {
                 throw new Error('Form submission failed');
             }
         } catch (error) {
