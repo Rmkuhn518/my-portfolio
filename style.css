@@ -178,6 +178,19 @@ h2 {
   margin-left: 5cm;
 }
 
+.projects-container h2 a {
+  color: #713d98; /* Default purple */
+  text-decoration: none; /* Remove underline */
+}
+
+.projects-container h2 a:hover {
+  color: #e8bcf0; /* Lighter purple (thank you popup shade) */
+}
+
+.projects-container h2 a:visited {
+  color: black; /* Turn black after clicking */
+}
+
 .project-card {
   margin: 0 15px 15px 30px;
   padding-bottom: 5px;
@@ -346,21 +359,6 @@ button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
-
-/* Linked Copy */
-
-a {
-  color: #713d98; /* Default purple */
-  text-decoration: none; /* Remove underline for consistency */
-}
-
-a:hover {
-  color: #e8bcf0; /* Lighter purple (thank you popup shade) */
-}
-
-a:visited {
-  color: black; /* Turn black after clicking */
 }
 
 /* Buttons */
