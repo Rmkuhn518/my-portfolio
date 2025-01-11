@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contactForm');
-    const popup = document.getElementById('thankYouPopup');
+    const popup = document.getElementById('Popup');
     
     form.addEventListener('submit', async function(e) {
         e.preventDefault(); // Temporarily prevent form submission
@@ -31,15 +31,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 })
             });
             
-            // Show popup
+            // Show popup only after successful form submission
             showPopup();
+        } catch (error) {
+            console.error('Error:', error);
+            alert('There was an issue submitting your form. Please try again.');
+        }
+    });
+    
+    function showPopup() {
+        popup.style.display = 'block'; // Show popup
+    }
 
-function showPopup() {
-    const popup = document.getElementById('Popup');
-    popup.style.display = 'block';
-}
-
-function closePopup() {
-    const popup = document.getElementById('Popup');
-    popup.style.display = 'none';
-}
+    function closePopup() {
+        popup.style.display = 'none'; // Hide popup
+    }
+});
