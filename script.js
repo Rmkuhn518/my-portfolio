@@ -92,8 +92,8 @@ function closePopup() {
 
 function showPopup(bool) {
   if (bool) {
-    document.getElementById('popup').style.visibility = 'visible'
+    document.getElementById('thankYouPopup').style.visibility = 'visible'
   } else {
-    document.getElementById('popup').style.visibility = 'hidden'
+    document.getElementById('thankYouPopup').style.visibility = 'hidden'
   }
 }
