@@ -104,7 +104,7 @@ h2 {
   font-size: 25px;
   color: rgb(128, 128, 128);
   margin-top: -1cm;
-  margin-right: 200px;
+  margin-right: 100px;
 }
 
 .profile_image {
@@ -112,7 +112,7 @@ h2 {
   height: fit-content;
   vertical-align: middle;
   margin: 5px;
-  margin-left: 100px;
+  margin-left: 50px;
   margin-top: 40px
 }
 
