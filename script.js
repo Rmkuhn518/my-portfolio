@@ -35,16 +35,16 @@ document.addEventListener('DOMContentLoaded', function() {
             showPopup();
 
 function showPopup() {
-    const popup = document.getElementById('popup');
+    const popup = document.getElementById('Popup');
     popup.style.display = 'block';
 }
 
 function closePopup() {
-    const popup = document.getElementById('popup');
+    const popup = document.getElementById('Popup');
     popup.style.display = 'none';
 }
 
 function closePopup() {
-    const popup = document.getElementById('popup');
+    const popup = document.getElementById('Popup');
     popup.style.display = 'none';
 }
