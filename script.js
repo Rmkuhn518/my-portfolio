@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     message: message
                 })
             });
-            
             if (response.ok) {
                 // Clear the form first
                 form.reset();
@@ -65,11 +64,11 @@ function displayError(message) {
 }
 
 function showPopup() {
-    const popup = document.getElementById('thankYouPopup');
-    popup.style.display = 'block';
+    const thankYouPopup = document.getElementById('thankYouPopup');
+    thankYouPopup.style.display = 'block';
     
-    popup.addEventListener('click', function(e) {
-        if (e.target === popup) {
+    thankYouPopup.addEventListener('click', function(e) {
+        if (e.target === thankYouPopup) {
             closePopup();
         }
     });
@@ -82,11 +81,11 @@ function showPopup() {
 }
 
 function closePopup() {
-    const popup = document.getElementById('thankYouPopup');
-    popup.style.display = 'none';
+    const thankYouPopup = document.getElementById('thankYouPopup');
+    thankYouPopup.style.display = 'none';
 }
 
 function closePopup() {
-    const popup = document.getElementById('thankYouPopup');
-    popup.style.display = 'none';
+    const thankYouPopup = document.getElementById('thankYouPopup');
+    thankYouPopup.style.display = 'none';
 }
