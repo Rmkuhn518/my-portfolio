@@ -242,7 +242,7 @@ h2 {
 
 /* Form Pop-up */
 
-.popup {
+.thankYouPopup {
   width:400px;
   background-color: #e8bcf0;
   border-radius: 3mm;
@@ -255,11 +255,11 @@ h2 {
   visibility: hidden;
 }
 
-.popup img {
+.thankYouPopup img {
   padding-top: 20px;
 }
 
-.popup button {
+.thankYouPopup button {
   background-color: #fff;
   border: 1px solid #713d98;
   color: #713d98;
@@ -273,7 +273,7 @@ h2 {
   margin-left: 25%;
 }
 
-.popup button:hover {
+.thankYouPopup button:hover {
   background-color: #fff;
   border: 2px solid #713d98;
   color: #713d98;
