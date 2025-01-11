@@ -1,36 +1,4 @@
-// Mobile menu functionality
 document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
-    const topDiv = document.querySelector('.topdiv');
-    const bioContent = document.querySelector('.bio-content');
-    const bioToggle = document.querySelector('.bio-toggle');
-    
-    // Hamburger menu toggle
-    if (hamburger) {
-        hamburger.addEventListener('click', function() {
-            this.classList.toggle('active');
-            topDiv.classList.toggle('active');
-        });
-        
-        // Close menu when clicking a link
-        const menuLinks = document.querySelectorAll('.topmenu');
-        menuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                topDiv.classList.remove('active');
-            });
-        });
-    }
-
-    // Bio toggle functionality
-    if (bioToggle) {
-        bioToggle.addEventListener('click', () => {
-            bioContent.classList.toggle('expanded');
-            bioToggle.textContent = bioContent.classList.contains('expanded') ? 'Read Less' : 'Read More';
-        });
-    }
-
-    // Form handling
     const form = document.getElementById('contactForm');
     
     form.addEventListener('submit', async function(e) {
@@ -62,10 +30,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     message: message
                 })
             });
-            
             if (response.ok) {
+                // Clear the form first
                 form.reset();
+                
+                // Update button state
                 submitButton.textContent = 'Sent!';
+                
+                // Show the popup
                 showPopup();
             } else {
                 throw new Error('Form submission failed');
@@ -107,6 +79,17 @@ function showPopup() {
         }
     });
 }
+
+function closePopup() {
+    const thankYouPopup = document.getElementById('thankYouPopup');
+    thankYouPopup.style.display = 'none';
+}
+
+function closePopup() {
+    const thankYouPopup = document.getElementById('thankYouPopup');
+    thankYouPopup.style.display = 'none';
+}
+
 
 function closePopup() {
     const thankYouPopup = document.getElementById('thankYouPopup');
