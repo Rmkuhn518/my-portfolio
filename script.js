@@ -33,15 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Show popup
             showPopup();
-            
-            // Reset form
-            form.reset();
-        } catch (error) {
-            console.error('Error submitting form:', error);
-            alert('There was an error sending your message. Please try again.');
-        }
-    });
-});
 
 function showPopup() {
     const popup = document.getElementById('thankYouPopup');
