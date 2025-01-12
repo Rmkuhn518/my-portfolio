@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contactForm');
-    });
-});
-
     
     form.addEventListener('submit', async function(e) {
         e.preventDefault();
