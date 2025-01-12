@@ -104,7 +104,7 @@ h2 {
   font-size: 25px;
   color: rgb(128, 128, 128);
   margin-top: -1cm;
-  margin-right: 100px;
+  margin-right: 50px;
 
 }
 
@@ -123,6 +123,7 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
+  padding-left: 60px;
 }
 
 .skill {
@@ -185,6 +186,22 @@ h2 {
 .project-card h3 {
   font-size: 25px;
   margin-left: 30px;
+}
+
+.project-card h3 a {
+  color: #713d98; /* Default purple */
+}
+
+.project-card h3 a:hover {
+  color: #e8bcf0; /* Lighter purple (thank you popup shade) */
+}
+
+.projects-container h2 a:visited {
+  color: #713d98;
+}
+
+.projects-container h2 a:active {
+  color: #713d98; 
 }
 
 .project-card li {
@@ -302,7 +319,7 @@ label {
 }
 
 input, textarea {
-  width: 150%;
+  width: 100%;
   padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ddd;
@@ -357,6 +374,7 @@ button:hover {
   padding: 10px;
   width: 2in;
   font-size: 20px;
+  
   /* Centering styles */
   display: block;
   margin: 50px auto; /* Changed from margin: 50px to auto for horizontal centering */
