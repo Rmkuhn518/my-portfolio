@@ -84,7 +84,3 @@ function closePopup() {
     const thankYouPopup = document.getElementById('thankYouPopup');
     thankYouPopup.style.display = 'none';
 }
-
-// script.js
-document.addEventListener("DOMContentLoaded", () => {
-x
