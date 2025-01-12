@@ -88,5 +88,3 @@ function closePopup() {
 // script.js
 document.addEventListener("DOMContentLoaded", () => {
 x
-
-
