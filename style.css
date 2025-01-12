@@ -33,6 +33,8 @@ body {
 .topdiv {
   float: right;
   padding-right: 1cm;
+  top-padding: 30px;
+
 }
 
 .profile_name {
