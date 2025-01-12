@@ -1,5 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contactForm');
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+    
+    hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+    });
+});
+
     
     form.addEventListener('submit', async function(e) {
         e.preventDefault();
@@ -84,3 +92,7 @@ function closePopup() {
     const thankYouPopup = document.getElementById('thankYouPopup');
     thankYouPopup.style.display = 'none';
 }
+
+// script.js
+document.addEventListener("DOMContentLoaded", () => {
+x
