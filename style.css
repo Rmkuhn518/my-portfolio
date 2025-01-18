@@ -5,7 +5,7 @@ body {
 /* Navigation Bar */
 
 #home {
-  background-color:  #713d98;
+  background-color: #3d984d;
   padding-bottom: 1cm;
   margin-left:-1cm;
   margin-right:-1cm;
@@ -63,7 +63,7 @@ h2 {
   font-size: 50px;
   text-align: center;
   float: left;
-  color: #713d98;
+  color: #3d984d;
   margin: 30px;
   margin-left: 60px;
   margin-top: 40px;
@@ -97,7 +97,7 @@ h2 {
 #about-me h1 {
   font-size: 65px;
   margin-top: 90px;
-  color: #713d98;
+  color: #3d984d;
 }
 
 #about-me p {
@@ -189,19 +189,19 @@ h2 {
 }
 
 .project-card h3 a {
-  color: #713d98; /* Default purple */
+  color: #3d984d;
 }
 
 .project-card h3 a:hover {
-  color: #e8bcf0; /* Lighter purple (thank you popup shade) */
+  color: #bcf0c8;
 }
 
 .projects-container h2 a:visited {
-  color: #713d98;
+  color: #3d984d;
 }
 
 .projects-container h2 a:active {
-  color: #713d98; 
+  color: #3d984d;
 }
 
 .project-card li {
@@ -237,7 +237,7 @@ h2 {
 }
 
 .recommendation span {
-  color: #713d98;
+  color: #3d984d;
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -248,7 +248,7 @@ h2 {
   width: 48px;
   height: 48px;
   border-radius: 100%;
-  background-color: #713d98;
+  background-color: #3d984d;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -262,7 +262,7 @@ h2 {
 
 .thankYouPopup {
   width:400px;
-  background-color: #e8bcf0;
+  background-color: #bcf0c8;
   border-radius: 3mm;
   top: 50%;
   left:50%;
@@ -278,8 +278,8 @@ h2 {
 
 .thankYouPopup button {
   background-color: #fff;
-  border: 1px solid #713d98;
-  color: #713d98;
+  border: 1px solid #3d984d;
+  color: #3d984d;
   display: block;
   border-radius: 6px;
   text-align: center;
@@ -292,8 +292,8 @@ h2 {
 
 .thankYouPopup button:hover {
   background-color: #fff;
-  border: 2px solid #713d98;
-  color: #713d98;
+  border: 2px solid #3d984d;
+  color: #3d984d;
   display: block;
   font-weight: bolder;
   text-align: center;
@@ -368,8 +368,8 @@ button:hover {
 
 .contact-button {
   background-color: white;
-  border: 1px solid #7600bc;
-  color: #7600bc;
+  border: 1px solid #00bc4b;
+  color: #00bc4b;
   border-radius: 6px;
   padding: 10px;
   width: 2in;
@@ -377,21 +377,21 @@ button:hover {
   
   /* Centering styles */
   display: block;
-  margin: 50px auto; /* Changed from margin: 50px to auto for horizontal centering */
+  margin: 50px auto;
   text-align: center;
 }
 
 .contact-button:hover {
-  background-color: #713d98;
-  border: 1px solid #713d98;
+  background-color: #3d984d;
+  border: 1px solid #3d984d;
   color: #fff;
   cursor: pointer;
 }
 
 button {
   background-color: white;
-  border: 1px solid; 
-  color: #7600bc;
+  border: 1px solid;
+  color: #00bc4b;
   display: block;
   border-radius: 6px;
   text-align: center;
@@ -402,10 +402,14 @@ button {
 }
 
 button:hover {
-  background-color: #713d98;
-  border: 1px solid #713d98;
+  background-color: #3d984d;
+  border: 1px solid #3d984d;
   color: #fff;
   display: block;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
   border-radius: 6px;
   text-align: center;
   cursor: pointer;
