@@ -5,7 +5,7 @@ body {
 /* Navigation Bar */
 
 #home {
-  background-color: #3d984d;
+  background-color: #2c7b37;
   padding-bottom: 1cm;
   margin-left:-1cm;
   margin-right:-1cm;
@@ -63,7 +63,7 @@ h2 {
   font-size: 50px;
   text-align: center;
   float: left;
-  color: #3d984d;
+  color: #2c7b37;
   margin: 30px;
   margin-left: 60px;
   margin-top: 40px;
@@ -97,7 +97,7 @@ h2 {
 #about-me h1 {
   font-size: 65px;
   margin-top: 90px;
-  color: #3d984d;
+  color: #2c7b37;
 }
 
 #about-me p {
@@ -189,7 +189,7 @@ h2 {
 }
 
 .project-card h3 a {
-  color: #3d984d;
+  color: #2c7b37;
 }
 
 .project-card h3 a:hover {
@@ -197,11 +197,11 @@ h2 {
 }
 
 .projects-container h2 a:visited {
-  color: #3d984d;
+  color: #2c7b37;
 }
 
 .projects-container h2 a:active {
-  color: #3d984d;
+  color: #2c7b37;
 }
 
 .project-card li {
@@ -237,7 +237,7 @@ h2 {
 }
 
 .recommendation span {
-  color: #3d984d;
+  color: #2c7b37;
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -248,7 +248,7 @@ h2 {
   width: 48px;
   height: 48px;
   border-radius: 100%;
-  background-color: #3d984d;
+  background-color: #2c7b37;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -278,8 +278,8 @@ h2 {
 
 .thankYouPopup button {
   background-color: #fff;
-  border: 1px solid #3d984d;
-  color: #3d984d;
+  border: 1px solid #2c7b37;
+  color: #2c7b37;
   display: block;
   border-radius: 6px;
   text-align: center;
@@ -292,8 +292,8 @@ h2 {
 
 .thankYouPopup button:hover {
   background-color: #fff;
-  border: 2px solid #3d984d;
-  color: #3d984d;
+  border: 2px solid #2c7b37;
+  color: #2c7b37;
   display: block;
   font-weight: bolder;
   text-align: center;
@@ -382,8 +382,8 @@ button:hover {
 }
 
 .contact-button:hover {
-  background-color: #3d984d;
-  border: 1px solid #3d984d;
+  background-color: #2c7b37;
+  border: 1px solid #2c7b37;
   color: #fff;
   cursor: pointer;
 }
@@ -402,8 +402,8 @@ button {
 }
 
 button:hover {
-  background-color: #3d984d;
-  border: 1px solid #3d984d;
+  background-color: #2c7b37;
+  border: 1px solid #2c7b37;
   color: #fff;
   display: block;
   border-radius: 6px;
