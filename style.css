@@ -157,6 +157,11 @@ h2 {
   font-weight: bold;
 } 
 
+.skills h2 {
+  margin: 0 auto;
+  padding: 0 60px;
+} 
+
 .skills p {
   align-items: center;
   font-size: 15px;
