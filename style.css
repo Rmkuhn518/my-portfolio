@@ -81,14 +81,6 @@ h2 {
   position: relative;
 }
 
-.skills h2 {
-  padding-left: 60px;
-}
-
-.projects h2 {
-  padding-left: 60px;
-}
-
 /* Used in the About Me sections */
 
 .container {
@@ -173,6 +165,10 @@ h2 {
   margin-block-end: 5px;
 } 
 
+.skills h2 {
+  padding-left: 60px;
+}
+
 .flex_center {
   display: flex;
   align-items: center;
@@ -197,6 +193,10 @@ h2 {
 .project-card {
   margin: 0 15px 15px 45px;
   padding-bottom: 5px;
+}
+
+.projects h2 {
+  padding-left: 60px;
 }
 
 .project-card h3 {
