@@ -81,6 +81,14 @@ h2 {
   position: relative;
 }
 
+.skills h2 {
+  padding-left: 60px;
+}
+
+.projects h2 {
+  padding-left: 60px;
+}
+
 /* Used in the About Me sections */
 
 .container {
