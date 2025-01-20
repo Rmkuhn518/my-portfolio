@@ -129,6 +129,7 @@ h2 {
   flex-direction: row;
   flex-flow: wrap;
   padding: 0 80px;
+  justify-content: center;
 }
 
 .skill {
