@@ -86,7 +86,7 @@ h2 {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 45px;
   width: 100%;
   display: flex;
 }
@@ -118,6 +118,7 @@ h2 {
   vertical-align: middle;
   margin: 5px;
   margin-left: 0px;
+  margin-right: 5px;
   margin-top: 0px;
 }
 
