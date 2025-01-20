@@ -86,7 +86,7 @@ h2 {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 50px;
   width: 100%;
   display: flex;
 }
