@@ -7,9 +7,9 @@ body {
 #home {
   background-color: #3d984d;
   padding-bottom: 1cm;
-  margin-left:-1cm;
-  margin-right:-1cm;
-  margin-top:-1cm;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
   padding-top: 2cm;
   padding-bottom: 2cm;
   height: 5mm;
