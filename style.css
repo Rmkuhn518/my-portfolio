@@ -84,11 +84,11 @@ h2 {
 /* Used in the About Me sections */
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;  /* Reduced padding for mobile */
-    width: 100%;
-    box-sizing: border-box;  /* This ensures padding is included in width */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 60px;
+  width: 100%;
+  display: flex;
 }
 
 /* About Me */
