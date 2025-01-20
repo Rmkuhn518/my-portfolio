@@ -5,15 +5,12 @@ body {
 /* Navigation Bar */
 
 #home {
-  background-color: #3d984d;
-  padding-bottom: 1cm;
-  margin-left:-1cm;
-  margin-right:-1cm;
-  margin-top:-1cm;
-  padding-top: 2cm;
-  padding-bottom: 2cm;
-  height: 5mm;
- }
+    background-color: #3d984d;
+    padding: 2rem 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
 
 .topmenu {
   color: white;
