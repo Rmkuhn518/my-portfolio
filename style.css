@@ -84,6 +84,10 @@ h2 {
 /* Used in the About Me sections */
 
 .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
   display: flex;
 }
 
