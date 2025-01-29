@@ -99,7 +99,7 @@ h2 {
 }
 
 #about-me h1 {
-  font-size: 50px;
+  font-size: 65px;
   margin-top: 90px;
   color: #3d984d;
 }
@@ -137,7 +137,7 @@ h2 {
   display: block;
   border-radius: 6px;
   text-align: center;
-  margin: 50px;
+  margin: 35px;
   padding: 10px;
   width: 2in;  
   font-size: 20px;
