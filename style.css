@@ -139,7 +139,8 @@ h2 {
   text-align: center;
   margin: 50px;
   padding: 10px;
-  width: 2in;
+  width: 4in;  /* Set width to 4 inches */
+  height: 2in; /* Set height to 2 inches */
   font-size: 20px;
   box-shadow: 0 3px 10px gray;
 }
