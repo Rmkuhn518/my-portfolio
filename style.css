@@ -128,7 +128,7 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
-  padding: 0 40px;
+  padding: 0 60px;
   justify-content: center;
 }
 
@@ -137,7 +137,7 @@ h2 {
   display: block;
   border-radius: 6px;
   text-align: center;
-  margin: 50px;
+  margin: 30px;
   padding: 10px;
   width: 4in;  /* Set width to 4 inches */
   height: 2in; /* Set height to 2 inches */
